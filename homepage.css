@@ -1,0 +1,277 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(214, 205, 205);
+}
+/*Main-nav css */
+ /*to change the color of navbar*/
+ .navbar{
+    background-color: black;
+    color: white;
+    height: 60px;
+    margin-bottom: 0px;
+}
+/*to style amazon brand image*/
+.brand-nav-image{
+    color: white;
+    margin: 6px;
+    margin-right: 0;
+}
+/*to style .in text in brand */
+.brand-nav-text{
+    color: white;  
+    font-weight:600; 
+    padding-right: 8px;
+}
+ /*to align the amazon brand properly */
+.navbar-header{
+   margin-top: 2px;
+   margin-left: 15px;
+   border: 1px solid black;
+
+}
+/*to overwrite css of anchor tage in amazon brand */
+   .brand-nav-text:hover{
+    color: white;
+    text-decoration: none;
+}
+/*to add hove style to amazon brand */
+.navbar-header:hover{
+    border: 1px solid white;
+    border-radius: 3%;
+}
+.navbar-items{
+    margin: 8px;
+    list-style: none;
+  
+}
+.navbar-list-items-left{
+    float: left;
+    /* font-family:Amazon Ember; */
+    font-weight: 700;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid black;
+
+}
+.navbar-list-items-left:hover{
+    border: 1px solid white;
+    border-radius: 3%;
+
+}
+.navbar-list-items-right{
+    float: right;
+    font-family:Amazon Ember;
+    font-weight: 700;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 15px;
+    border: 1px solid black;
+
+}
+.navbar-list-items-right:hover{
+    border: 1px solid white;
+    border-radius: 3%; 
+}
+/* to remove margins of navbar created by bootstrap */
+.navbar-inverse{
+    margin-bottom: 0px;
+}
+/* to give styles for sub navigation bar */
+.sub-nav{
+    list-style: none;
+    overflow: none;
+    color: white;
+    background-color: rgb(56, 12, 54);
+    height: 46px;
+    margin-left: 0px;
+  
+}
+
+/* to make list items of sub navbar to be vertical  */
+.sub-nav-item{
+    color: white;
+    float: left;
+    padding: 5px;
+    margin: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-size:  bold;
+    margin-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 0;
+    border: 1px solid rgb(56, 12, 54);
+
+}
+/* to style text in right corner of sub navigation bar */
+.sub-nav-item-right{
+    color: white;
+    float: right;
+    padding: .8px;
+    /* margin: 2px; */
+    font-size: 20px;
+    text-decoration: none;
+    font-size:  bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 0;
+}
+.sub-nav-item:hover
+{ 
+   border: 1px solid white;
+   text-decoration: none;
+   color: white;
+}
+.sub-nav-item-right:hover{
+    border: 1px solid white;
+   text-decoration: none;
+   color: white;
+}
+.menu-left{
+    float: left;
+}
+/* making carousel to occupie full width of screen */
+.carousel{
+    position: absolute;
+    left: 0px;
+}
+/*adding items in card */
+
+.products{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+.products-card{
+    width: 22.5%;
+    height: 380px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+    top: 340px;
+    z-index: 1;
+    float: left;
+    margin-left: 2%;
+}
+.product-card-heading
+{
+  font-size: 21px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:bolder;
+  color: black;
+  padding: 4%;
+}
+ .product-card-images{
+   width: 44%;
+   margin-left: 4%;
+   height: 100px;
+ }
+ .products-card-image-head
+ {
+   width: 44%;
+   margin-left:4%;
+ }
+ .product-card-footer{
+     padding: 12px;
+     color:rgb(66, 66, 100);
+ }
+.product-card2-image{
+    width: 90%;
+    height: 65%;
+    margin-left: 5%;
+}
+
+
+/*FOOTER STARTS HERE*/
+
+  .main-footer{
+    width: 100%;
+    height:fit-content;
+    position: relative;
+    margin-bottom: 20px;
+    top: 340px;
+    z-index: 1;
+    color: white;
+    float: left;
+    margin-top: 80px;
+    background-color: rgb(56, 12, 54);    
+  }
+.back-to-top{
+  background-color: rgb(81, 85, 90);
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.main-footer-body{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 40px;
+}
+/*to add space between ul elements in footer */
+.main-footer-body-ul{
+  margin-left: 5%;
+  list-style: none;
+  float: left;
+  width: fit-content;
+  color: white;
+
+}
+/*to add css to head of list items */
+.main-footer-body-ul-head{
+  font-size: 20px;
+  color: white;
+  list-style: none;
+}
+/*to add css to anchor  item */
+.main-footer-body-ul-text{
+  font-size: 14px;
+  color: white;
+  font-family: Amazon Ember ;
+  opacity: 0.8;
+}
+.main-footer-body-ul-text:hover{
+  color: white;
+}
+.ul-text-li{
+  padding: 4px;
+}
+.main-footer1{
+  width: 100%;
+    height:fit-content;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+    color: white;
+    float: left;
+    background-color: rgb(56, 12, 54);
+}
+ /* to define the property for language button */
+.btn-language{
+  opacity: 0.9;
+   background-color: transparent;
+   border: 1px solid white;
+   margin-left: 20px;
+   color: white;
+}
+.main-footer-language{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main-footer1-ul{
+  list-style: none;
+
+}
+.main-footer1-li{
+   padding: 8px;
+   float: left;
+}
+.footer-country{
+  color: white;
+}
