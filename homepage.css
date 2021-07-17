@@ -6,11 +6,13 @@ body{
 }
 /*Main-nav css */
  /*to change the color of navbar*/
+
  .navbar{
     background-color: black;
     color: white;
     height: 60px;
     margin-bottom: 0px;
+    width: 1484px;
 }
 /*to style amazon brand image*/
 .brand-nav-image{
@@ -31,6 +33,7 @@ body{
    border: 1px solid black;
 
 }
+
 /*to overwrite css of anchor tage in amazon brand */
    .brand-nav-text:hover{
     color: white;
@@ -139,6 +142,7 @@ body{
     position: absolute;
     left: 0px;
 }
+
 /*adding items in card */
 
 .products{
@@ -147,16 +151,40 @@ body{
     position: relative;
   }
 .products-card{
-    width: 22.5%;
+    width: 335.7px;
     height: 380px;
     background-color: white;
     position: relative;
     margin-bottom: 20px;
     top: 340px;
     z-index: 1;
-    float: left;
     margin-left: 2%;
 }
+@media screen and (max-width:1000px) {
+  .products-card{
+    position: relative;
+    top: 220px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .products-card{
+    position: relative;
+    top: 220px;
+  }
+}
+@media screen and (max-width:780px) {
+  .products-card{
+    position: relative;
+    top: 80px;
+  }
+}
+@media screen and (max-width:680px) {
+  .products-card{
+    position: relative;
+    top: 0px;
+  }
+}
+
 .product-card-heading
 {
   font-size: 21px;
