@@ -1,0 +1,93 @@
+.navbar{
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+}
+.brand-nav-image{
+    margin: 6px;
+    margin-right: 0;
+    width: 100px;
+    height: 40px;
+}
+.brand-nav-text{
+    color: white;  
+    font-weight:600; 
+    padding-right: 8px;
+}
+.navbar-header{
+   margin-top: 2px;
+   margin-left: 15px;
+   border: 1px solid black;
+
+}
+.navbar-form{
+display: inline;
+}
+.brand-nav-text:hover{
+    color: white;
+    text-decoration: none;
+}
+.navbar-items{
+    margin: 8px;
+    list-style: none;
+  }
+.navbar-li{
+    float: left;
+    font-weight: 700;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid black;
+}
+.glyphicon-map-marker{
+    font-size: 18px;
+}
+.glyphicon-shopping-cart{
+    font-size: 35px;
+}
+.glyphicon-search{
+    color: black;
+    font-size: 18px;
+}
+.input-height{
+    height: 40px;
+}
+.li-text-light{
+    font-weight: 100;
+    opacity: 0.99; 
+    font-size: 13px;
+}
+.li-right{
+    float: right;
+}
+.flag{
+    width: 22px;
+    height: 18px;
+    margin: 10px;
+}
+.navbar-header:hover{
+    border: 1px solid white;
+    border-radius: 3%;
+}
+.navbar-li:hover{
+    border: 1px solid white;
+    border-radius: 3%;
+}
+.icon-bar{
+    color: white;
+    background-color: white;
+}
+@media screen and (max-width:800px) {
+    .li-right{
+        float: none;
+    }
+    .navbar-li{
+        border:1px solid rgb(37, 34, 34);
+    }
+    .navbar-header{
+        border: none;
+    }
+    .navbar-header:hover{
+        border: none;
+    }
+}
