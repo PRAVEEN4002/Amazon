@@ -258,4 +258,7 @@ body{
     top: -10px;
     margin-bottom: -10px;
   }
+  .products-card{
+    margin-left: 12%;
+  }
 }
