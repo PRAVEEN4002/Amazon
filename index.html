@@ -11,7 +11,7 @@
     <title>Online shopping site in india</title>
     <link rel="stylesheet" href="homepage.css">
     <link href="navbar1.css" rel="stylesheet">
-    <link rel="icon" href="/Images/brand.jpg" >
+    <link rel="icon" href="/Images/Icons/brand.jpg" >
 </head>
 <body>
   
@@ -24,9 +24,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          <a class="brand-nav-text">
-             <img class="brand-nav-image" src="/Images/amazon-smile.png" onclick="alertbox()">.in
-          </a>
+          <span class="brand-nav">
+             <img class="brand-nav-image" src="/Images/Icons/amazon-smile.png" onclick="alertbox()">.in
+          </span>
       </div>
       <!--plaing list of items in naviagationbar-->
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -36,23 +36,22 @@
                   <span class="li-text-light">Hello</span><br>
                       Select your address
               </li>
-         
-                  <form class="navbar-form ">
-                      <div class="input-group" style="margin-left: 18px;">
-                          <div class="input-group-btn" > 
-                              <button class="btn btn-default input-height" onclick="alertbox()">
-                                  <span class="input-all-menu"> All</span><span class="caret"></span>
-                              </button>
-                          </div>
-                          <input type="text" class="form-control input-height" size="40" name="search">
-                          <div class="input-group-btn">
-                              <button class="btn btn-warning input-height" type="submit"  onclick="alertbox()">
-                                  <i class="glyphicon glyphicon-search">
-                                  </i> 
-                              </button>
-                          </div>
-                      </div>
-                  </form>
+                <form class="navbar-form ">
+                    <div class="input-group" style="margin-left: 18px;">
+                        <div class="input-group-btn" > 
+                            <button class="btn btn-default input-height" onclick="alertbox()">
+                                <span class="input-all-menu"> All</span><span class="caret"></span>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control input-height" size="40" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-warning input-height" type="submit"  onclick="alertbox()">
+                                <i class="glyphicon glyphicon-search">
+                                </i> 
+                            </button>
+                        </div>
+                    </div>
+                </form>
 
               <li class="navbar-li li-right" onclick="alertbox()">
                   <span class="glyphicon glyphicon-shopping-cart"></span>cart
@@ -65,229 +64,394 @@
                   <div class="li-text-light">Hello, sign in</div>
                   <div>   Account & Lists <span class="caret"></span> </div>
               </li>
-              <li class="navbar-li li-right " onclick="alertbox()"><img src="/Images/inida.png" class="flag" ><span class="caret" ></span></li>
+              <li class="navbar-li li-right " onclick="alertbox()"><img src="/Images/Icons/inida.png" class="flag" ><span class="caret" ></span></li>
           </ul>
       </div>
      
   </div>
 </nav>
-   <!--creting sub-navigation bar(it has been creted using html+css)-->
-  <nav class="sub-nav">
-    <ul class="sub-nav">
-      <li><a class="sub-nav-item" href="#"> <span class="glyphicon glyphicon-align-justify"></span> All</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers_17d44cb01bd144359b81b1c10b84dd98">Best sellers</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles_9292c6cb7b394d30b2467b8f631090a7">Mobiles</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion_ad6f81eb5d474066bc9e5788a3c19a28">Fashion</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics_c5b70a82461a484189e700166599ce9f">Electronics</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases_b9144c00866c4016b948d9b5b5215b45">New Releases</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help_79404a52982a4d9d973cf256c713999e">Prime</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help_79404a52982a4d9d973cf256c713999e">Customer Service</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc_d99b175b1db64d5b968b67ba6e5a72a3">computers</a></li>
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/gp/sva/dashboard?ref_=nav_cs_apay_fe0c735739554ca1a7cccf7c41941f2f">Amazon Pay</a></li> 
-      <li><a class="sub-nav-item" target="-blank" href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home_5f0a1657ec2a4557a8233992829feaf3">Home & kitchen</a></li> 
+<!--Sub navigation bar-->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#subNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-align-justify"></span> All</a>
+      <a href="https://www.amazon.in/prime?ref_=nav_cs_primelink_nonmember_2860122b63884a8688052dc445e46bd9" target="-blank">Prime</a>
+      <a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers_17d44cb01bd144359b81b1c10b84dd98">Best sellers</a>
+      <a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers_17d44cb01bd144359b81b1c10b84dd98" target="-blank">Mobiles</a>
+    </div>
+    <div class="collapse navbar-collapse" id="subNavbar">
+      <ul class="nav navbar-nav">
+        <li> <a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion_ad6f81eb5d474066bc9e5788a3c19a28" target="-blank">Fashion</a> </li>
+        <li><a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics_c5b70a82461a484189e700166599ce9f" target="-blank">Electronics</a></li> 
+        <li><a href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases_b9144c00866c4016b948d9b5b5215b45" target="-blank">New Releases</a></li>
+        <li><a href="https://www.amazon.in/gp/sva/dashboard?ref_=nav_cs_apay_fe0c735739554ca1a7cccf7c41941f2f" target="-blank">Amazon pay</a></li>
+        <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help_79404a52982a4d9d973cf256c713999e" target="-blank">Customer services</a></li>
+        <li><a href="https://www.amazon.in/computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc_d99b175b1db64d5b968b67ba6e5a72a3" target="-blank">Computers</a></li>
+        <li><a href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home_5f0a1657ec2a4557a8233992829feaf3" target="-blank">Home & kitchen</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li onclick="alertbox()"><a href=""><img src="/Images/Icons/amazon.png"> shopping made easy|Download the app</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
 
-      <li><a class="sub-nav-item-right" href="#"><img src="/Images/amazon.png" width="50px" height="35x"> shopping made easy|Download the app</a></li> 
-      
-    </ul>
-
-  </nav>
-   <!--carousel also called slider, the following code is used for carousel(bootstrap3 carousel)-->
-  <div class="container">
-    
-    <div id="myCarousel" class="carousel slide" data-ride="Carousel">
+<!--carousel also called slider, the following code is used for carousel(bootstrap3 carousel)-->
+<div id="myCarousel" class="carousel slide" data-ride="Carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active" onclick="alertbox()">
-           <img src="/Images/carousel.jpg" alt="Los Angeles" style="width:100%;">
-        </div>
-  
-        <div class="item" onclick="alertbox()">
-          <img src="/Images/carousel1.jpg" alt="Chicago" style="width:100%;">
-        </div>
-      
-        <div class="item" onclick="alertbox()">
-          <img src="/Images/carousel3.jpg" alt="New york" style="width:100%;">
+          <img src="/Images/Carousel/carousel4.jpg" alt="prime day sale" style="width:100%;">
         </div>
         <div class="item" onclick="alertbox()">
-          <img src="/Images/carousel4.jpg" alt="New york" style="width:100%;">
+          <img src="/Images/Carousel/carousel.jpg" alt="Chicago" style="width:100%;">
         </div>
         <div class="item" onclick="alertbox()">
-          <img src="/Images/carousel5.jpg" alt="New york" style="width:100%;">
-        </div><div class="item " onclick="alertbox()">
-          <img src="/Images/carousel-toofani.jpg" alt="New york" style="width:100%;">
+          <img src="/Images/Carousel/carousel1.jpg" alt="New york" style="width:100%;">
+        </div>
+        <div class="item" onclick="alertbox()">
+          <img src="/Images/Carousel/carousel2.jpg" alt="New york" style="width:100%;">
+        </div>
+        <div class="item" onclick="alertbox()">
+        <img src="/Images/Carousel/carousel3.jpg" alt="New york" style="width:100%;">
+        </div>
+        <div class="item " onclick="alertbox()">
+          <img src="/Images/Carousel/carousel-toofani.jpg" alt="New york" style="width:100%;">
         </div>
       </div>
-  
+      
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
       </a>
+
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
-  </div>
-      <!--i-->
-      <div class="products ">
-        <div class="row">
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Top rated, premium quality | Amazon Brands & more</div>
-            <img src="/Images/Product Images/Top Rated Premium Quality/clothing.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Top Rated Premium Quality/Home-products.jpg" class="product-card-images">
-            <span class="products-card-image-head">clothing essentials</span>
-            <span class="products-card-image-head" style="margin-left: 12%;" >Home products</span>
-            <img src="/Images/Product Images/Top Rated Premium Quality/Daily.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Top Rated Premium Quality/furniture.jpg" class="product-card-images">
-            <span class="products-card-image-head">Daily essentials</span>
-            <span class="products-card-image-head" style="margin-left: 14%;">clothing essentials</span>
-            <div class="product-card-footer">see more</div>
+</div>
+
+<!--products starts here-->
+<div class="products ">
+    <div class="row">
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+          <div class="product-card-heading">
+            Top rated, premium quality | Amazon Brands & more
           </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Automative essentials | Up to 60% off</div>
-            <img src="/Images/Product Images/Professional Tools/cleaning supplies.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Professional Tools/measuring instruments.jpg" class="product-card-images">
-            <span class="products-card-image-head">cleaning accessories</span>
-            <span class="products-card-image-head";" style="margin-left: 8%;">measuring essentials</span>
-            <img src="/Images/Product Images/Professional Tools/Medical supplies.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Professional Tools/Tool1.jpg" class="product-card-images">
-            <span class="products-card-image-head" ">Medical supplies</span>
-            <span class="products-card-image-head" style="margin-left:14%;">Mechanical tools</span>
-            <div class="product-card-footer">see more</div>
+          <div class="product">
+            <img src="/Images/Product Images/Top Rated Premium Quality/clothing.jpg" class="product-card-image">
+            clothing essentials
           </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">At Home Grooming & Wellness devices</div>
-            <img src="/Images/Product Images/Grooming/men's grooming.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Grooming/women's grooming.jpg" class="product-card-images">
-            <span class="products-card-image-head">Men's Grooming</span>
-            <span class="products-card-image-head" style="margin-left: 12%;" >Women's grooming</span>
-            <img src="/Images/Product Images/Grooming/massages.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Grooming/Healthicare.jpg" class="product-card-images">
-            <span class="products-card-image-head">massagers</span>
-            <span class="products-card-image-head" style="margin-left: 14%;">Healthicare devices</span>
-            <div class="product-card-footer">see more</div>
+          <div class="product">
+            <img src="/Images/Product Images/Top Rated Premium Quality/Home-products.jpg" class="product-card-image">
+            Home products
           </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Up to 70% off | Electronics clearance store </div>
-              <img src="/Images/pc.jpeg" class="product-card2-image"></img>
-            <div class="product-card-footer">see more</div>
+          <div class="product">
+            <img src="/Images/Product Images/Top Rated Premium Quality/Daily.jpg" class="product-card-image">
+            Daily essentials
           </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Styles for Men | Up to 70% off</div>
-            <img src="/Images/Product Images/Styles for Men/Bags & luggages.jpg"  class="product-card-images">
-            <img src="/Images/Product Images/Styles for Men/Watches.jpg" class="product-card-images">
-            <span class="products-card-image-head">Bags & luggages</span>
-            <span class="products-card-image-head" style="margin-left: 18%;">Watches</span>
-            <img src="/Images/Product Images/Styles for Men/Footwear.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Styles for Men/cloting.jpg" class="product-card-images">
-            <span class="products-card-image-head">footwear</span>
-            <span class="products-card-image-head" style="margin-left: 34%;">clothing</span>
-            <div class="product-card-footer">see more</div>
+          <div class="product">
+            <img src="/Images/Product Images/Top Rated Premium Quality/furniture.jpg" class="product-card-image">
+            Home essentials
           </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Shop by Category</div>
-            <img src="/Images/Product Images/Category/fresh.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Category/mobiles.jpg" class="product-card-images">
-            <span class="products-card-image-head" style="margin-left: 16%;">Fresh</span>
-            <span class="products-card-image-head" style="margin-left: 40%;">Mobiles</span>
-            <img src="/Images/Product Images/Category/fashion.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Category/Electronics.jpg" class="product-card-images">
-            <span class="products-card-image-head" style="margin-left: 16%;">Fashion</span>
-            <span class="products-card-image-head" style="margin-left: 34%;">Electronics</span>
-            <div class="product-card-footer">see more</div>
-          </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Beverages | More Megastore</div>
-            <img src="/Images/Product Images/Beverages.jpg/juicie.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Beverages.jpg/cold.drink.jpg" class="product-card-images">
-            <span class="products-card-image-head">juicies</span>
-            <span class="products-card-image-head" style="margin-left: 35%;" >Cold drinks</span>
-            <img src="/Images/Product Images/Beverages.jpg/tea.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Beverages.jpg/offers.jpg" class="product-card-images">
-            <span class="products-card-image-head">Tea & Coffee</span>
-            <span class="products-card-image-head" style="margin-left: 22%;">Deals & offers |visit store</span>
-            <div class="product-card-footer">see more</div>
-          </div> 
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Up to 70% off | Electronics clearance store </div>
-              <img src="/Images/Product Images/Card-type2/credit.jpg" class="product-card2-image"></img>
-            <div class="product-card-footer">see more</div>
-          </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Flat 50% back on Fruits & vegetables | Amazon Fresh</div>
-            <img src="/Images/Product Images/Fruits & Vegetables/fruits.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Fruits & Vegetables/vegetables.jpg" class="product-card-images">
-            <span class="products-card-image-head">Fruits</span>
-            <span class="products-card-image-head" style="margin-left: 35%;" >Vegetables</span>
-            <img src="/Images/Product Images/Fruits & Vegetables/organic-vegetables.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Fruits & Vegetables/Deals.jpg" class="product-card-images">
-            <span class="products-card-image-head">Organic vegetables</span>
-            <span class="products-card-image-head" style="margin-left: 22%;">Delas & offers</span>
-            <div class="product-card-footer">see more</div>
-          </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Fashion clearance store | 50% - 70% off </div>
-            <img src="/Images/Product Images/Fashion/clothing.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Fashion/footwear.jpg" class="product-card-images">
-            <span class="products-card-image-head">clothing</span>
-            <span class="products-card-image-head" style="margin-left: 35%;" >footwear</span>
-            <img src="/Images/Product Images/Fashion/jewellery.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Fashion/store.jpg" class="product-card-images">
-            <span class="products-card-image-head">jewellery</span>
-            <span class="products-card-image-head" style="margin-left: 35%;">store</span>
-            <div class="product-card-footer">see more</div>
-          </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Upgrad your home | Amazon Brands & more</div>
-            <img src="/Images/Product Images/Upgrad/Led-tv.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Upgrad/appliance.jpg" class="product-card-images">
-            <span class="products-card-image-head">smart LED TVs</span>
-            <span class="products-card-image-head" style="margin-left: 20%;" >Appliances</span>
-            <img src="/Images/Product Images/Upgrad/furniture.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Upgrad/kitchen.jpg" class="product-card-images">
-            <span class="products-card-image-head">Furniture</span>
-            <span class="products-card-image-head" style="margin-left: 28%;">kitchen Products</span>
-            <div class="product-card-footer">see more</div>
-          </div>
-          <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
-            <div class="product-card-heading">Popular categories in fashion</div>
-            <img src="/Images/Product Images/Popular in Fashion/Men's innerwear.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Popular in Fashion/Women's innerwear.jpg" class="product-card-images">
-            <span class="products-card-image-head">Men's innerwear</span>
-            <span class="products-card-image-head" style="margin-left: 20%;" >Women's innerwear</span>
-            <img src="/Images/Product Images/Popular in Fashion/Men's footwear.jpg" class="product-card-images">
-            <img src="/Images/Product Images/Popular in Fashion/watches.jpg" class="product-card-images">
-            <span class="products-card-image-head">Men's footwear</span>
-            <span class="products-card-image-head" style="margin-left: 28%;">watches</span>
-            <div class="product-card-footer">see more</div>
-          </div>
-        </div>
-    
+          <div class="card-footer">see more</div>
       </div>
- <div class="main-footer">
-  <!--to navigate user to top when scrolled to bottom-->
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Automative essentials | Up to 60% off
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Professional Tools/cleaning supplies.jpg" class="product-card-image">
+          cleaning essentials
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Professional Tools/measuring instruments.jpg" class="product-card-image">
+          measuring essentials
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Professional Tools/Medical supplies.jpg" class="product-card-image">
+          Medical supplies
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Professional Tools/Tool1.jpg" class="product-card-image">
+           Mechanical tools
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          At Home Grooming & Wellness devices
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Grooming/men's grooming.jpg" class="product-card-image">
+          Men's Grooming
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Grooming/women's grooming.jpg" class="product-card-image">
+          women's Grooming
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Grooming/massages.jpg" class="product-card-image">
+          massagers
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Grooming/Healthicare.jpg" class="product-card-image">
+           Healthcare device-width
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">Up to 70% off | Electronics clearance store </div>
+          <img src="/Images/Product Images/Card-type2/pc.jpeg" class="product-card2-image"></img>
+        <div class="product-card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Styles for Men | Up to 70%
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Styles for Men/Bags & luggages.jpg" class="product-card-image">
+           Bags & luggages
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Styles for Men/Watches.jpg" class="product-card-image">
+          watches
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Styles for Men/Footwear.jpg" class="product-card-image">
+          footwear
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Styles for Men/cloting.jpg" class="product-card-image">
+           clothing
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+      
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+         Shop by Category
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Category/fresh.jpg" class="product-card-image">
+           Fresh
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Category/fashion.jpg" class="product-card-image">
+          Fashion
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Category/mobiles.jpg" class="product-card-image">
+          Mobiles
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Category/Electronics.jpg" class="product-card-image">
+           Electronics
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Bevarages | More Megastore
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Beverages.jpg/juicie.jpg" class="product-card-image">
+            juicies
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Beverages.jpg/cold.drink.jpg" class="product-card-image">
+            cold drinks
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Beverages.jpg/tea.jpg" class="product-card-image">
+           Tea & cofee 
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Beverages.jpg/offers.jpg" class="product-card-image">
+            Deals & offers
+         </div>
+         <div class="card-footer">see more</div>
+      </div> 
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">Up to 70% off | Electronics clearance store </div>
+          <img src="/Images/Product Images/Card-type2/credit.jpg" class="product-card2-image"></img>
+        <div class="product-card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Flat 50% back on Fruits & vegetables | Amazon Fresh
+        </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fruits & Vegetables/fruits.jpg" class="product-card-image">
+            Fruits
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fruits & Vegetables/vegetables.jpg" class="product-card-image">
+            vegetables
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fruits & Vegetables/organic-vegetables.jpg" class="product-card-image">
+           organic vegetables
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fruits & Vegetables/Deals.jpg" class="product-card-image">
+            Deals & offers
+         </div>
+         <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Fashion clearance store | 50-70% off
+        </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fashion/clothing.jpg" class="product-card-image">
+            clothing
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fashion/footwear.jpg" class="product-card-image">
+            footwear
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fashion/jewellery.jpg" class="product-card-image">
+           jewellery
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Fashion/store.jpg" class="product-card-image">
+            store
+         </div>
+         <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Upgrad Your Home | Amazon brand & more
+        </div>
+         <div class="product">
+           <img src="/Images/Product Images/Upgrad/Led-tv.jpg" class="product-card-image">
+             smart Led Tvs
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Upgrad/appliance.jpg" class="product-card-image">
+            Appliances
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Upgrad/furniture.jpg" class="product-card-image">
+           furniture
+         </div>
+         <div class="product">
+           <img src="/Images/Product Images/Upgrad/kitchen.jpg" class="product-card-image">
+            kitchen products
+         </div>
+         <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Popular catergories in fashion
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Popular in Fashion/Men's innerwear.jpg" class="product-card-image">
+            Men's innerwear
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Popular in Fashion/Women's innerwear.jpg" class="product-card-image">
+          Women's innerwear
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Popular in Fashion/Men's footwear.jpg" class="product-card-image">
+          Men's footwear
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Popular in Fashion/watches.jpg" class="product-card-image">
+          Watchess
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">
+          Snacks store | More Megastore
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Snacks/chips.jpg" class="product-card-image">
+            chips & namkeens
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Snacks/biscuits.jpg" class="product-card-image">
+           Biscuits & Cookies
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Snacks/frozen snacks.jpg" class="product-card-image">
+           Frozen Snacks
+        </div>
+        <div class="product">
+          <img src="/Images/Product Images/Snacks/deal.jpg" class="product-card-image">
+           Deals & offers
+        </div>
+        <div class="card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">For all your monsoon essentials</div>
+          <img src="/Images/Product Images/Card-type2/rainy.jpg" class="product-card2-image"></img>
+        <div class="product-card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">Masks and faceshields</div>
+          <img src="/Images/Product Images/Card-type2/facemask.jpg" class="product-card2-image"></img>
+        <div class="product-card-footer">see more</div>
+      </div>
+
+      <div class="products-card col-xl-3 col-md-4 col-sm-6 col-xs-12" onclick="alertbox()">
+        <div class="product-card-heading">Enjoy deals & offers with Prime</div>
+          <img src="/Images/Product Images/Card-type2/prime.jpg" class="product-card2-image"></img>
+        <div class="product-card-footer">see more</div>
+      </div>
+
+    </div>
+
+</div>
+<div class="main-footer">
+    <!--to navigate user to top when scrolled to bottom-->
     <div class="back-to-top">
       <a href="#home" style="color: white;">Back to top</a>
     </div>
+
     <!--the main footer starts here-->
     <div class="main-footer-body">
-    <ul class="main-footer-body-ul">
-      <li class="ul-text-li"><span class="main-footer-body-ul-head">Get to know us</span></li>
+     <ul class="main-footer-body-ul">
+        <li class="ul-text-li"><span class="main-footer-body-ul-head">Get to know us</span></li>
         <li class="ul-text-li" ><a class="main-footer-body-ul-text"href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About us</a></li>
         <li class="ul-text-li"> <a class="main-footer-body-ul-text" href="https://amazon.jobs/en/">Careers</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">press Releases</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/browse.html?node=8872558031&ref_=footer_cares">Amazon careers</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/browse.html?node=4594605031&ref_=footer_smile">gift a smile</a></li>
       </ul>
+      
       <ul class="main-footer-body-ul">
-      <li class="ul-text-li"><span class="main-footer-body-ul-head">Connect with Us</span></li>
+        <li class="ul-text-li"><span class="main-footer-body-ul-head">Connect with Us</span></li>
         <li class="ul-text-li" ><a class="main-footer-body-ul-text"href="http://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6">Facebook</a></li>
         <li class="ul-text-li"> <a class="main-footer-body-ul-text" href="http://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6">Twitter</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="http://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards">Instagram</a></li>
       </ul>
+
       <ul class="main-footer-body-ul">
-      <li class="ul-text-li"><span class="main-footer-body-ul-head">Make Money with Us</span></li>
+        <li class="ul-text-li"><span class="main-footer-body-ul-head">Make Money with Us</span></li>
         <li class="ul-text-li" ><a class="main-footer-body-ul-text"href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter&ref_=nav_footer_sell">Sell on Amazon</a></li>
         <li class="ul-text-li"> <a class="main-footer-body-ul-text" href="https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://sell.amazon.in/grow-your-business/amazon-global-selling.htmll?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></li>
@@ -296,8 +460,9 @@
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="http://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter">Fulfilment by Amazon</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></li>
       </ul>
+      
       <ul class="main-footer-body-ul">
-      <li class="ul-text-li"><span class="main-footer-body-ul-head">Let Us Help You</span></li>
+        <li class="ul-text-li"><span class="main-footer-body-ul-head">Let Us Help You</span></li>
         <li class="ul-text-li" ><a class="main-footer-body-ul-text"href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">COVID-19 and Amazon</a></li>
         <li class="ul-text-li"> <a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns Centre</a></li>
@@ -306,37 +471,40 @@
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/BIT/theamazonapp/ref=footer_assistant_download_copy">Amazon Assistant Download</a></li>
         <li class="ul-text-li"><a class="main-footer-body-ul-text" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></li>
       </ul>
-    
-    </div>
+</div>
+
     <!--footer below consist of countries-->
-    <div class="main-footer1">
-    <hr style="opacity: 0.1;">
-    <div style="text-align: center;">
-      <img src="/Images/amazon-smile.png" width="65px" height="28px">
-      <button type="button" class="btn btn-language"> <span class="glyphicon glyphicon-globe"></span> <span style="padding: 6px;">English</span> <span class="caret"></span>   </button>
+<div class="main-footer1">
+
+      <hr style="opacity: 0.1;">
+
+      <div style="text-align: center;">
+        <img src="/Images/Icons/amazon-smile.png" width="65px" height="28px">
+        <button type="button" class="btn btn-language"> <span class="glyphicon glyphicon-globe"></span> <span style="padding: 6px;">English</span> <span class="caret"></span>   </button>
+      </div>
+
+      <div class="main-footer-language">
+        <ul class="main-footer1-ul">
+        <li class="main-footer1-li"><a href="" class="footer-country">Australia</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">Brazil</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">Canada</li>
+        <li class="main-footer1-li"><a href="" class="footer-country">china</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">France</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">Germany</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">italy</a></li>
+        <li class="main-footer1-li"><a href="" class="footer-country">Japan</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">Netherlands</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">Poland</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">Singapore</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">Spain</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">Turkey</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">United Arab Emirates</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">United Kingdom</a></li> 
+        <li class="main-footer1-li"><a href="" class="footer-country">United States</a></li> 
+        </ul>
+      </div>
     </div>
-    <div class="main-footer-language">
-      <ul class="main-footer1-ul">
-      <li class="main-footer1-li"><a href="" class="footer-country">Australia</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">Brazil</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">Canada</li>
-      <li class="main-footer1-li"><a href="" class="footer-country">china</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">France</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">Germany</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">italy</a></li>
-      <li class="main-footer1-li"><a href="" class="footer-country">Japan</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">Netherlands</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">Poland</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">Singapore</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">Spain</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">Turkey</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">United Arab Emirates</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">United Kingdom</a></li> 
-      <li class="main-footer1-li"><a href="" class="footer-country">United States</a></li> 
-      </ul>
-    </div>
-    </div>
- </div>
+</div>
 <script>
 function alertbox()
 {
