@@ -252,13 +252,13 @@ body{
   .products-card{
     position: relative;
     top: -10px;
+    margin-left: 12%;
+
   }
   .main-footer{
     position: relative;
     top: -10px;
     margin-bottom: -10px;
   }
-  .products-card{
-    margin-left: 12%;
-  }
+ 
 }
